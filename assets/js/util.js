@@ -584,33 +584,59 @@
 	};
 })(jQuery);
 
+function message(msg) {
+	$('<div class="message"><span>' + msg + '</span></div>').appendTo($("body"));
+	setTimeout(function () {
+		$(".message").animate({
+			opacity: 0.15
+		}, 5000, function () {
+			$(".message").remove();
+		});
+	}, 2000);
+}
+
 function sendMail() {
 	var $form = $("#emailForm");
-	var $button = $(".actions");
-	var $data = $form.serialize();
 
-	$button.hide();
-	$('<div class="loading"><i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i></div>').appendTo($button.parent());
-	
-	$.ajax({
-		type: 'POST',
-		url: 'sendMail.php',
-		data: $data,
-		context: document.body,
-		success: function (msg) {
-			$('<div class="message"><span>' + msg + '</span></div>').appendTo($("body"));
-			setTimeout(function(){
-				$(".message").animate({
-					opacity: 0.15
-				}, 5000, function () {
-					$(".message").remove();
-				});
-			}, 2000);
-		}
-	}).done(function () {
-		$('.fa-spinner').remove();
-		$button.show();
-		$form.removeClass('is-loading');
-		$form.parent().show();
-	});
+	if ($("#name").val() == "") {
+		message("O campo nome deve ser preenchido!");
+		$("#name").focus();
+	}
+	else if ($("#email").val() == ""){
+		message("O campo Email deve ser preenchido!")
+		$("#email").focus();
+	}
+	else if ($("#email").val().indexOf("@") == -1 ||
+		$("#email").val().indexOf(".") == -1){
+		message("O campo Email não está preenchido de forma válida!");
+		$("#email").focus();
+	}
+	else if ($("#message").val() == ""){
+		message("Você provavelmente não quer enviar uma mensagem em branco!");
+		$("#message").focus();
+	}
+	else if ($("#category").val() == ""){
+		message("Por favor, selecione uma categoria");
+		$("#category").focus();
+	}
+	else {
+		var $button = $(".actions");
+		var $data = $form.serialize();
+
+		$button.hide();
+		$('<div class="loading"><i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i></div>').appendTo($button.parent());
+
+		$.ajax({
+			type: 'POST',
+			url: 'sendMail.php',
+			data: $data,
+			context: document.body,
+			success: message(msg)
+		}).done(function () {
+			$('.fa-spinner').remove();
+			$button.show();
+			$form.removeClass('is-loading');
+			$form.parent().show();
+		});
+	}
 }
