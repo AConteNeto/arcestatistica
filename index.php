@@ -112,22 +112,22 @@
 						<section class="4u 6u(medium) 12u$(xsmall)">
 							<span class="icon alt major fa-area-chart"></span>
 							<h3>Análise Exploratória</h3>
-							<p>Foco em encontrar padrões por meio de medidas exploratórias, como Análise Fatorial.</p>
+							<p>Foco em encontrar padrões por meio de métodos exploratórios e multivariados</p>
 						</section>
 						<section class="4u 6u$(medium) 12u$(xsmall)">
 							<span class="icon alt major fa-bar-chart"></span>
 							<h3>Análise Não Paramétrica</h3>
-							<p>Entenda seus dados com uso de técnicas mais flexiveis</p>
+							<p>Entenda seus dados com uso de técnicas com pressupostos mais flexíveis</p>
 						</section>
 						<section class="4u$ 6u(medium) 12u$(xsmall)">
 							<span class="icon alt major fa-flask"></span>
 							<h3>Planejamento de Experimentos</h3>
-							<p>Cálculo do tamanho de amostra e planejamento para obter os resultados de forma confiável</p>
+							<p> Planejamento, delineamento amostral e dimensionamento de amostra com foco em minimizar o erro</p>
 						</section>
 						<section class="4u 6u$(medium) 12u$(xsmall)">
 							<span class="icon alt major fa-line-chart"></span>
 							<h3>Modelos Estatísticos</h3>
-							<p>Regressão utilizando modelos de séries temporais e dados longitudinais</p>
+							<p>Regressão utilizando modelos, incluindo séries temporais e dados longitudinais</p>
 						</section>
 						<section class="4u 6u(medium) 12u$(xsmall)">
 							<span class="icon alt major fa-cogs"></span>
@@ -137,7 +137,7 @@
 						<section class="4u$ 6u$(medium) 12u$(xsmall)">
 							<span class="icon alt major fa-file-text-o"></span>
 							<h3>Questionários</h3>
-							<p>Auxílio na construção de questionários, de forma a mitigar perguntas irelevantes e facilitar a análise</p>
+							<p>Auxílio na elaboração de questionários, de forma a eliminar perguntas irelevantes e otimizar a análise</p>
 						</section>
 					</div>
 				</div>

@@ -2197,15 +2197,15 @@ input[type="button"],
     top: 0;
     width: 100%; }
   .spotlight header {
-    -moz-transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
     -moz-transition: -moz-transform 1s ease, opacity 1s ease;
     -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
     -ms-transition: -ms-transform 1s ease, opacity 1s ease;
     transition: transform 1s ease, opacity 1s ease;
-    top: 40%;
+    top: 50%;
     position: absolute;
     width: 65%;
     text-align: center;
