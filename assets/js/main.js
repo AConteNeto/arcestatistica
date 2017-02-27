@@ -210,16 +210,18 @@
 							bottom: bottom,
 							initialize: function (t) { $this.addClass('inactive'); },
 							terminate: function (t) { $this.removeClass('inactive'); },
-							enter: function (t) { $this.removeClass('inactive'); },
+							enter: function (t) { $this.removeClass('inactive');
+								$this.children("header").css({
+									"opacity": "1"
+								});
+							},
 
 							// Uncomment the line below to "rewind" when this spotlight scrolls out of view.
 
 							//leave:	function(t) { $this.addClass('inactive'); },
 
 						});
-
 					}
-
 				};
 
 				off = function () {
@@ -232,7 +234,6 @@
 
 						// Remove scrollex.
 						$this.unscrollex();
-
 					}
 
 				};
@@ -348,6 +349,9 @@
 			}
 
 			var loop = function () {
+				$("#canvas").width($('#banner').width());
+				$("#canvas").height($('#banner').height());
+
 				// Limpa o objeto canvas atual:
 				context.clearRect(0, 0, canvas.width, canvas.height);
 

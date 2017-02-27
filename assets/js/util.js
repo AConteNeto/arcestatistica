@@ -631,7 +631,9 @@ function sendMail() {
 			url: 'sendMail.php',
 			data: $data,
 			context: document.body,
-			success: message(msg)
+			success: function(msg) {
+				message(msg);
+			}
 		}).done(function () {
 			$('.fa-spinner').remove();
 			$button.show();
