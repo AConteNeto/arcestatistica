@@ -92,7 +92,7 @@
 					<a href="https://www.facebook.com/ARC-Consultoria-e-An%C3%A1lise-Estat%C3%ADstica-1235203846532692/" class="icon alt fa-facebook">
 						<span class="label">Facebook</span></a>
 				</li>
-				<li><a href="mailto:arcestatistica@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="#emailForm" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 				<li><a href="#fone" class="icon alt fa-phone"><span class="label">Fone</span></a></li>
 			</ul>
 			<ul class="copyright">

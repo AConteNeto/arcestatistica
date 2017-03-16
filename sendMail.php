@@ -1,6 +1,6 @@
 <?php
 $subject =  $_POST["category"];
-$to = 'arcestatistica@gmail.com';
+$to = 'contato@arcestatistica.com.br';
 
 if ($subject == "1"){
     $subject = 'Atendimento';
@@ -22,5 +22,4 @@ if ($result)
     echo 'Email enviado com Sucesso';
 else
     echo "Falha ao enviar o email";
-
 ?>

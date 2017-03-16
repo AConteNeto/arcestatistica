@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -1205,7 +1205,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 
 body, input, select, textarea {
   color: rgba(255, 255, 255, 0.75);
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Ubuntu", Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 100;
   line-height: 1.75em; }
@@ -1609,6 +1609,8 @@ header.major {
   margin: 0 0 4em 0;
   position: relative;
   text-align: center; }
+  header.major h2 {
+    margin-bottom: 0; }
   header.major:after {
     background: #165176;
     content: '';

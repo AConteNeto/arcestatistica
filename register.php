@@ -26,7 +26,7 @@ if (isset($_SESSION['user']))
 
 if ($save) {
     // Criando conexão com a base de dados:
-    $connection = new mysqli('localhost', 'root', '', 'arcestatistica');
+    $connection = new mysqli('localhost', 'AConteN370', '357471571c4', 'arcestatistica');
     if ($connection->connect_errno)
     {
         echo("Falha ao conectar-se ao banco. Erro: ".$connection->connect_error);
@@ -46,7 +46,7 @@ if ($save) {
     $url = $_SERVER['REQUEST_URI'];
 
     // Arrumando URL index:
-    if ($url == "/arcestatistica/") $url = $url."index.php";
+    if ($url == "/") $url = $url."index.php";
 
     $url = explode("?", $url)[0];
     $aux = explode("/", $url);
@@ -87,11 +87,10 @@ if ($save) {
         }
     }
     $sql->close();
-
+    
     // Registrar acesso a página pelo visitante:
-    if ($sql = $connection->prepare("INSERT INTO visitorAccessPage(date, pageId, visitorIp, browser, platform) 
-    VALUES (CURRENT_TIME, ?, ?, ?, ?)")) {
-        $sql->bind_param("ssss", $id, $ip, $browserName, $platform);
+    if ($sql = $connection->prepare("INSERT INTO visitorAccessPage VALUES (CURRENT_TIME, ?, ?, ?, ?)")) {
+        $sql->bind_param('isss', $id, $ip, $browserName, $platform);
         $sql->execute();
     }
     $sql->close();
