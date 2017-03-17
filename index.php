@@ -42,7 +42,7 @@
 		<section id="banner">
 			<div class="content">
 				<span>
-					<img src="images/logo.svg" alt=""/>
+					<img src="images/logo.png" alt=""/>
 				</span>
 			</div>
 			<a href="#one" class="goto-next scrolly">Next</a>

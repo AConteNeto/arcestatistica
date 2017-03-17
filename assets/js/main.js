@@ -308,19 +308,19 @@
 		$(".title img").css({ height: $(".title").height() - 0.25 * $(".title").height(),
 			"padding-top": 0.2 * $(".title").height() });
 
-		// Redimensionando o logo em SVG:
-		var $logo = $(".content > span > img");
-		if (skel.vars.browser == 'ie' || skel.vars.browser == 'edge'){
-			$logo.attr('src', 'images/logo.png');
-		}
-		else {
-			resizeLogo();
-			addEventListener('resize', function() {
-				resizeLogo();
-			}, false);
-			function resizeLogo(){
-				$logo.width($banner.width() * 0.6);
-			}
-		}
+		// // Redimensionando o logo em SVG:
+		// var $logo = $(".content > span > img");
+		// if (skel.vars.browser == 'ie' || skel.vars.browser == 'edge'){
+		// 	$logo.attr('src', 'images/logo.png');
+		// }
+		// else {
+		// 	resizeLogo();
+		// 	addEventListener('resize', function() {
+		// 		resizeLogo();
+		// 	}, false);
+		// 	function resizeLogo(){
+		// 		$logo.width($banner.width() * 0.6);
+		// 	}
+		// }
 	});
 })(jQuery);
