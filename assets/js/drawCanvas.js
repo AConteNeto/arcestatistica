@@ -44,11 +44,15 @@ $(function () {
 			canvas.width = $('#banner').width();
 			canvas.height = $('#banner').height();
 
+			var grd = context.createLinearGradient(0, 0, canvas.width, canvas.height);
+			grd.addColorStop(0, "#1f3884");
+			grd.addColorStop(1, "#169ecd");
+
 			graphic = canvas.width * (options.widthEfectFast / 2);
 			nBars = Math.ceil(canvas.width / options.barPixels);
 
 			if (nBars != nBarsAnt) {
-				for (i = 0; i < nBars; i++) {
+				for (i = 0; i <= nBars; i++) {
 					objetive[i] = verifyLimits(Math.random());
 					current[i] = verifyLimits(Math.random());
 				}
@@ -56,8 +60,9 @@ $(function () {
 			}
 
 			var x = 0, y, p;
+			n = current.length;
 			// Percorre todos os pontos para desenhar:
-			for (i in current) {
+			for (i = 0; i < n; i++) {
 				// Configurando mudanças movimento do mouse:
 				if (skel.vars.mobile || mouseX == null)
 					p = options.farVelocity;
@@ -73,8 +78,30 @@ $(function () {
 					else
 						p = options.noMouseVelocity;
 
+				y = canvas.height - (canvas.height * current[i]);
+
+				// Desenhando as linhas:
+				context.beginPath()
+					context.moveTo(x, y); // Move contexto para o primeiro ponto;
+					var auxY = canvas.height - (canvas.height * current[i + 1]);
+					context.lineTo(x + options.barPixels, auxY); // Desenha a linha de contexto até as coordenadas do segundo ponto;
+					context.strokeStyle = "rgba(255, 255, 255, 0.2)";
+					context.lineWidth = 2;
+					context.stroke();
+				context.closePath();
+				
+				// Desenhando pontos:
+				context.beginPath();
+					context.arc(x, y, 5, 0, 2 * Math.PI);
+					context.lineWidth = 4;
+					context.strokeStyle = "#000000";
+					context.stroke();
+					context.fillStyle = grd;
+					context.fill();
+				context.closePath();
+				
 				// Configurando as mudanças na altura:
-				if (i == 0) continue;
+				
 				if (Math.abs(objetive[i] - current[i]) < 0.02)
 					sinal++;
 				else if (current[i] > objetive[i])
@@ -82,29 +109,7 @@ $(function () {
 				else if (current[i] < objetive[i])
 					current[i] += current[i] * p;
 
-				y = canvas.height - (canvas.height * current[i]);
-
-				// Desenhando:
-				context.beginPath()
-				var grd = context.createLinearGradient(0, 0, canvas.width, canvas.height);
-				grd.addColorStop(0, "#1f3884");
-				grd.addColorStop(1, "#169ecd");
-				context.arc(x, y, 5, 0, 2 * Math.PI);
-				context.lineWidth = 4;
-				context.strokeStyle = "#000000";
-				context.stroke();
-				context.fillStyle = grd;
-				context.fill();
-
-				context.moveTo(x, y);
-				y = canvas.height - (canvas.height * current[i - 1]);
-
-				context.lineTo(x - options.barPixels, y);
-				context.strokeStyle = "rgba(255, 255, 255, 0.2)";
-				context.lineWidth = 2;
-				context.stroke();
-				context.closePath();
-				x = x + options.barPixels;
+				x += options.barPixels;
 			}
 			if (sinal > nBars) {
 				for (i in objetive)
