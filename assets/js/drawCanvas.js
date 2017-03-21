@@ -8,26 +8,24 @@ onmousemove = function (e) {
 $(function () {
 	var canvas = document.getElementById("canvas");
 	if (canvas != null) {
-		var context = canvas.getContext("2d");
-
-
-		var options = {
-			fps: 25,
-			barPixels: 5,
-			closeVelocity: 0.025,
-			farVelocity: 0.007,
-			noMouseVelocity: 0,
-			percentHeight: 0.05,
-			widthEfectFast: 0.1
-		}
+		var context = canvas.getContext("2d"),
+			options = {
+				fps: 25,
+				barPixels: 5,
+				closeVelocity: 0.02,
+				farVelocity: 0.007,
+				noMouseVelocity: 0,
+				percentHeight: 0.1,
+				widthEfectFast: 0.1
+			}
 
 		var graphic = canvas.width * (options.widthEfectFast / 2),
 			nBars = Math.ceil(canvas.width / options.barPixels);
-			objetive = [],
 			current = [],
+			objetive = [],
 			sinal = 0;
 
-		var verifyLimits = function (random) {
+		function verifyLimits(random) {
 			if (random < options.percentHeight)
 				random = options.percentHeight
 			else if (random > (1 - options.percentHeight))
@@ -37,16 +35,16 @@ $(function () {
 
 		var nBarsAnt = 0;
 		var loop = function () {
-			// Limpa o objeto canvas atual:
-			context.clearRect(0, 0, canvas.width, canvas.height);
-
 			// Resize canvas:
 			canvas.width = $('#banner').width();
 			canvas.height = $('#banner').height();
 
 			var grd = context.createLinearGradient(0, 0, canvas.width, canvas.height);
-			grd.addColorStop(0, "#1f3884");
-			grd.addColorStop(1, "#169ecd");
+			grd.addColorStop(0.05, "#1f367f");
+			grd.addColorStop(0.2, "#1b9ac9");
+			grd.addColorStop(0.5, "#6ec172");
+			grd.addColorStop(0.8, "#1b9ac9");
+			grd.addColorStop(0.95, "#1f367f");
 
 			graphic = canvas.width * (options.widthEfectFast / 2);
 			nBars = Math.ceil(canvas.width / options.barPixels);
@@ -101,7 +99,6 @@ $(function () {
 				context.closePath();
 				
 				// Configurando as mudanças na altura:
-				
 				if (Math.abs(objetive[i] - current[i]) < 0.02)
 					sinal++;
 				else if (current[i] > objetive[i])
