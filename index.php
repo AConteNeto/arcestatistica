@@ -7,22 +7,26 @@
 <html>
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109617543-1"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	gtag('config', 'UA-109617543-1');
+		gtag('config', 'UA-109617543-1');
 	</script>
 
-	<title>Home - ARC</title>
+	<title>ARC Estatística</title>
+
+	<!-- Metadata -->
 	<meta charset="utf-8" />
-	<meta name="description" content="Consultoria e Análise Estatística">
 	<meta name="keywords" content="ARC, Consultoria Estatística, Estatística, Análise Estatística">
-	<meta name="author" content="ARC">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Entre em contato conosco e contrate nossos serviços para que possamos extrair informações
+	valiosas dos seus dados. ARC - Consultoria e Análise Estatística">
+	<meta name="author" content="ARC - Consultoria e Análise Estatística">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" href="images/icon.png" type="image/png">
