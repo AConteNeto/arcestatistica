@@ -22,10 +22,22 @@
 	<!-- Metadata -->
 	<meta charset="utf-8" />
 	<meta name="keywords" content="ARC, Consultoria Estatística, Estatística, Análise Estatística">
-	<meta name="description" content="Entre em contato conosco e contrate nossos serviços para que possamos extrair informações
-	valiosas dos seus dados. ARC - Consultoria e Análise Estatística">
+	<meta name="description" content="Entre em contato conosco e contrate nossos serviços para que 
+	possamos extrair informações valiosas dos seus dados. ARC - Consultoria e Análise Estatística.">
 	<meta name="author" content="ARC - Consultoria e Análise Estatística">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="content-language" content="pt-br">
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+	<!-- Adicionando propriedades OpenGraph -->
+	<meta property="og:locale" content="_ptBR">
+	<meta property="og:url" content="http://arcestatistica.com.br/">
+	<meta property="og:site_name" content="ARC Estatística">
+	<meta property="og:title" content="Consultoria e Análise Estatística.">
+	<meta property="og:description" content="Entre em contato conosco e contrate nossos serviços para que 
+	possamos extrair informações valiosas dos seus dados. ARC - Consultoria e Análise Estatística.">
+	<meta property="og:image" content="http://arcestatistica.com.br/images/logo.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:type" content="website">
 
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
