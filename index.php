@@ -218,7 +218,7 @@
 			noMouseVelocity: 0.002,
 			closeVelocity: 0.05,
 			farVelocity: 0.01,
-			percentHeight: 0.15,
+			percentHeight: 0.20,
 			widthEfectFast: 0.1,
 			pointSize: 6
 		});

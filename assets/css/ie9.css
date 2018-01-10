@@ -19,7 +19,7 @@ body.landing:before, body.landing:after {
 /* Banner */
 /* line 39, ../sass/ie9.scss */
 #banner:after {
-  background-color: rgba(27, 27, 27, 0.7); }
+  background-color: rgba(27, 27, 27, 0.75); }
 
 /* Footer */
 /* line 50, ../sass/ie9.scss */
