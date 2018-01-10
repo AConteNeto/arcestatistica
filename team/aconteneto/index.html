@@ -104,7 +104,7 @@
 								<div class="container">
 									<h3>Contato</h3>
 									<p>Se você quiser entrar em contato comigo pode escrever sua mensagem abaixo ou me procurar nas redes sociais.</p>
-									<form method="post" action="#">
+									<form method="post" id="emailForm" action="#">
 										<div class="row uniform">
 											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Nome" /></div>
 											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="e-mail" /></div>
@@ -118,7 +118,7 @@
 										<div class="row uniform">
 											<div class="12u">
 												<ul class="actions">
-													<li><input type="submit" class="special" value="Enviar Mensagem" /></li>
+													<li><input type="button" onclick="sendMail()" class="special" value="Enviar Mensagem" /></li>
 													<li><input type="reset" value="Limpar" /></li>
 												</ul>
 											</div>
