@@ -2228,7 +2228,7 @@ input[type="radio"] + label:before {
       text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; }
   /* line 588, ../sass/main.scss */
   .icon.major {
-    background: #062335;
+    background: #272833;
     border-radius: 100%;
     cursor: default;
     display: inline-block;
@@ -2253,7 +2253,7 @@ input[type="radio"] + label:before {
         text-transform: none !important; }
       /* line 42, ../sass/main.scss */
       .icon.major.alt:before {
-        color: #062335 !important;
+        color: #272833 !important;
         text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; }
 
 /* Image */
@@ -2946,7 +2946,7 @@ body.is-touch .spotlight {
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
-      background: #062335;
+      background: #272833;
       content: '';
       display: block;
       height: 1em;
@@ -3110,7 +3110,7 @@ body.is-touch #banner {
 /* Footer */
 /* line 1491, ../sass/main.scss */
 #footer {
-  background: #062335;
+  background: #272833;
   padding: 6em 0;
   text-align: center; }
   /* line 1498, ../sass/main.scss */
@@ -3126,7 +3126,7 @@ body.is-touch #banner {
       text-transform: none !important; }
     /* line 42, ../sass/main.scss */
     #footer .icons .icon.alt:before {
-      color: #062335 !important;
+      color: #272833 !important;
       text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5); }
   /* line 1504, ../sass/main.scss */
   #footer .copyright {
@@ -3395,7 +3395,7 @@ body.is-touch #banner {
     top: 0;
     width: 100%;
     z-index: 10001;
-    background: #062335;
+    background: #272833;
     box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125); }
     /* line 1854, ../sass/main.scss */
     #titleBar .title {
