@@ -7,27 +7,25 @@
 <html>
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109617543-1"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	gtag('config', 'UA-109617543-1');
+		gtag('config', 'UA-109617543-1');
 	</script>
 	
-	<title>ARC - Contato</title>
+	<title>ARC Contato</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" href="images/icon.png" type="image/png">
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	<?php 
-		include('register.php')
-	?>
 </head>
 
 <body>

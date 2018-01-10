@@ -302,7 +302,6 @@
 
 		$banner
 			._parallax();
-		$banner.append("<canvas id='canvas'></canvas>");
 		
 		// Redimensionamento imagem logo barra (mobile):
 		$(".title img").css({ height: $(".title").height() - 0.25 * $(".title").height(),

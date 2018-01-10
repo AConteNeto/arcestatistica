@@ -69,6 +69,7 @@
 				</span>
 			</div>
 			<a href="#one" class="goto-next scrolly">Next</a>
+			<canvas id="canvas"></canvas>
 		</section>
 
 		<!-- One -->
@@ -210,5 +211,11 @@
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/drawCanvas.js"></script>
+	<script>
+		$("canvas").drawRandomPoints({
+			barPixels: 5,
+			noMouseVelocity: 0.002,
+		});
+	</script>
 </body>
 </html>
