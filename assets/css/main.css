@@ -2228,7 +2228,7 @@ input[type="radio"] + label:before {
       text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; }
   /* line 588, ../sass/main.scss */
   .icon.major {
-    background: #272833;
+    background: #062335;
     border-radius: 100%;
     cursor: default;
     display: inline-block;
@@ -2253,7 +2253,7 @@ input[type="radio"] + label:before {
         text-transform: none !important; }
       /* line 42, ../sass/main.scss */
       .icon.major.alt:before {
-        color: #272833 !important;
+        color: #062335 !important;
         text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; }
 
 /* Image */
@@ -2710,7 +2710,7 @@ input[type="button"],
     -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
     -ms-transition: -ms-transform 1s ease, opacity 1s ease;
     transition: transform 1s ease, opacity 1s ease;
-    background: rgba(23, 24, 32, 0.75);
+    background: rgba(27, 27, 27, 0.7);
     border-style: solid;
     opacity: 1;
     position: absolute; }
@@ -2946,7 +2946,7 @@ body.is-touch .spotlight {
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
-      background: #272833;
+      background: #062335;
       content: '';
       display: block;
       height: 1em;
@@ -3032,7 +3032,7 @@ body.landing #header {
 /* line 1401, ../sass/main.scss */
 #banner {
   background-attachment: fixed;
-  background-color: #272833;
+  background-image: url("../../images/background.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3040,27 +3040,27 @@ body.landing #header {
   position: relative;
   text-align: center;
   z-index: 21; }
-  /* line 1412, ../sass/main.scss */
+  /* line 1413, ../sass/main.scss */
   #banner:before {
     content: '';
     display: inline-block;
     height: 100vh;
     vertical-align: middle;
     width: 1%; }
-  /* line 1420, ../sass/main.scss */
+  /* line 1421, ../sass/main.scss */
   #banner:after {
-    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.75)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.75)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.75)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.75)), url("images/overlay.png");;
+    background-image: -moz-linear-gradient(top, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7));
+    background-image: -webkit-linear-gradient(top, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7));
+    background-image: -ms-linear-gradient(top, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7));
+    background-image: linear-gradient(top, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7));
     content: '';
     display: block;
+    position: absolute;
+    width: 100%;
     height: 100%;
     left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
-  /* line 1431, ../sass/main.scss */
+    top: 0; }
+  /* line 1432, ../sass/main.scss */
   #banner .content {
     display: inline-block;
     margin-right: 1%;
@@ -3070,50 +3070,50 @@ body.landing #header {
     text-align: right;
     vertical-align: middle;
     z-index: 1; }
-    /* line 1441, ../sass/main.scss */
+    /* line 1442, ../sass/main.scss */
     #banner .content header {
       display: inline-block;
       vertical-align: middle; }
-      /* line 1445, ../sass/main.scss */
+      /* line 1446, ../sass/main.scss */
       #banner .content header h2 {
         font-size: 2.5em;
         margin: 0; }
-      /* line 1450, ../sass/main.scss */
+      /* line 1451, ../sass/main.scss */
       #banner .content header p {
         margin: 0.5em 0 0 0;
         top: 0; }
-    /* line 1456, ../sass/main.scss */
+    /* line 1457, ../sass/main.scss */
     #banner .content .image {
       display: inline-block;
       height: 18em;
       margin-left: 3em;
       vertical-align: middle;
       width: 18em; }
-      /* line 1463, ../sass/main.scss */
+      /* line 1464, ../sass/main.scss */
       #banner .content .image img {
         display: block;
         width: 100%; }
-    /* line 1469, ../sass/main.scss */
+    /* line 1470, ../sass/main.scss */
     #banner .content img {
       display: block;
       width: 100%; }
-  /* line 1475, ../sass/main.scss */
+  /* line 1476, ../sass/main.scss */
   #banner canvas {
     position: absolute;
     display: block;
     top: 0px; }
 
-/* line 1483, ../sass/main.scss */
+/* line 1484, ../sass/main.scss */
 body.is-touch #banner {
   background-attachment: scroll; }
 
 /* Footer */
-/* line 1490, ../sass/main.scss */
+/* line 1491, ../sass/main.scss */
 #footer {
-  background: #272833;
+  background: #062335;
   padding: 6em 0;
   text-align: center; }
-  /* line 1497, ../sass/main.scss */
+  /* line 1498, ../sass/main.scss */
   #footer .icons .icon.alt {
     text-decoration: none; }
     /* line 8, ../sass/libs/_mixins.scss */
@@ -3126,9 +3126,9 @@ body.is-touch #banner {
       text-transform: none !important; }
     /* line 42, ../sass/main.scss */
     #footer .icons .icon.alt:before {
-      color: #272833 !important;
+      color: #062335 !important;
       text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5); }
-  /* line 1503, ../sass/main.scss */
+  /* line 1504, ../sass/main.scss */
   #footer .copyright {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
@@ -3136,95 +3136,95 @@ body.is-touch #banner {
     margin: 2em 0 0 0;
     padding: 0;
     text-align: center; }
-    /* line 1511, ../sass/main.scss */
+    /* line 1512, ../sass/main.scss */
     #footer .copyright li {
       border-left: solid 1px rgba(255, 255, 255, 0.3);
       display: inline-block;
       list-style: none;
       margin-left: 1.5em;
       padding-left: 1.5em; }
-      /* line 1518, ../sass/main.scss */
+      /* line 1519, ../sass/main.scss */
       #footer .copyright li:first-child {
         border-left: 0;
         margin-left: 0;
         padding-left: 0; }
-      /* line 1524, ../sass/main.scss */
+      /* line 1525, ../sass/main.scss */
       #footer .copyright li a {
         color: inherit; }
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
   /* Basic */
-  /* line 1537, ../sass/main.scss */
+  /* line 1538, ../sass/main.scss */
   body, input, select, textarea {
     font-size: 13pt; } }
 /* Large */
 @media screen and (max-width: 1280px) {
   /* Basic */
-  /* line 1552, ../sass/main.scss */
+  /* line 1553, ../sass/main.scss */
   body, input, select, textarea {
     font-size: 11.5pt; }
 
   /* Spotlight */
-  /* line 1560, ../sass/main.scss */
+  /* line 1561, ../sass/main.scss */
   .spotlight.top .content {
     padding: 3.825em 0 1.825em 0; }
-  /* line 1566, ../sass/main.scss */
+  /* line 1567, ../sass/main.scss */
   .spotlight.bottom .content {
     padding: 3.825em 0 2.95em 0; }
-  /* line 1572, ../sass/main.scss */
+  /* line 1573, ../sass/main.scss */
   .spotlight.left .content, .spotlight.right .content {
     padding: 4.5em 2.5em;
     width: 25em; }
 
   /* Wrapper */
-  /* line 1581, ../sass/main.scss */
+  /* line 1582, ../sass/main.scss */
   .wrapper {
     padding: 4.5em 0 2.5em 0; }
 
   /* Dropotron */
-  /* line 1588, ../sass/main.scss */
+  /* line 1589, ../sass/main.scss */
   .dropotron.level-0 {
     font-size: 1em; }
 
   /* Banner */
-  /* line 1596, ../sass/main.scss */
+  /* line 1597, ../sass/main.scss */
   #banner .content {
     padding: 4.5em; }
 
   /* Footer */
-  /* line 1603, ../sass/main.scss */
+  /* line 1604, ../sass/main.scss */
   #footer {
     padding: 4.5em 0; } }
 /* Medium */
 @media screen and (max-width: 980px) {
   /* Basic */
-  /* line 1618, ../sass/main.scss */
+  /* line 1619, ../sass/main.scss */
   body, input, select, textarea {
     font-size: 12pt; }
 
   /* Spotlight */
-  /* line 1624, ../sass/main.scss */
+  /* line 1625, ../sass/main.scss */
   .spotlight {
     background-attachment: scroll;
     height: auto; }
-    /* line 1628, ../sass/main.scss */
+    /* line 1629, ../sass/main.scss */
     .spotlight .image.main {
       display: block;
       margin: 0;
       max-height: 40vh;
       overflow: hidden; }
-    /* line 1635, ../sass/main.scss */
+    /* line 1636, ../sass/main.scss */
     .spotlight header {
       position: absolute;
       top: 10%;
       width: 100%;
       text-align: center;
       opacity: 1; }
-    /* line 1644, ../sass/main.scss */
+    /* line 1645, ../sass/main.scss */
     .spotlight.left header {
       left: 0; }
-    /* line 1649, ../sass/main.scss */
+    /* line 1650, ../sass/main.scss */
     .spotlight .content {
       background-color: #6dc174;
       border-width: 0 !important;
@@ -3237,135 +3237,135 @@ body.is-touch #banner {
       text-align: center;
       top: auto !important;
       width: 100% !important; }
-    /* line 1663, ../sass/main.scss */
+    /* line 1664, ../sass/main.scss */
     .spotlight .goto-next {
       display: none; }
 
   /* Wrapper */
-  /* line 1670, ../sass/main.scss */
+  /* line 1671, ../sass/main.scss */
   .wrapper {
     padding: 4.5em 2.5em 2.5em 2.5em; }
 
   /* Banner */
-  /* line 1676, ../sass/main.scss */
+  /* line 1677, ../sass/main.scss */
   #banner {
     background-attachment: scroll; }
-    /* line 1679, ../sass/main.scss */
+    /* line 1680, ../sass/main.scss */
     #banner .goto-next {
       height: 7em; }
-    /* line 1683, ../sass/main.scss */
+    /* line 1684, ../sass/main.scss */
     #banner .content {
       padding: 9em 0;
       text-align: center; }
-      /* line 1687, ../sass/main.scss */
+      /* line 1688, ../sass/main.scss */
       #banner .content header {
         display: block;
         margin: 0 0 2em 0;
         text-align: center; }
-      /* line 1693, ../sass/main.scss */
+      /* line 1694, ../sass/main.scss */
       #banner .content .image {
         margin: 0; }
 
   /* Footer */
-  /* line 1701, ../sass/main.scss */
+  /* line 1702, ../sass/main.scss */
   #footer {
     padding: 4.5em 0; } }
 /* Small */
-/* line 1709, ../sass/main.scss */
+/* line 1710, ../sass/main.scss */
 #navPanel, #titleBar {
   display: none; }
 
 @media screen and (max-width: 736px) {
   /* Basic */
-  /* line 1720, ../sass/main.scss */
+  /* line 1721, ../sass/main.scss */
   html, body {
     overflow-x: hidden; }
 
-  /* line 1724, ../sass/main.scss */
+  /* line 1725, ../sass/main.scss */
   body, input, select, textarea {
     font-size: 12pt; }
 
-  /* line 1728, ../sass/main.scss */
+  /* line 1729, ../sass/main.scss */
   h2 {
     font-size: 1.5em; }
 
-  /* line 1732, ../sass/main.scss */
+  /* line 1733, ../sass/main.scss */
   h3 {
     font-size: 1.2em; }
 
-  /* line 1736, ../sass/main.scss */
+  /* line 1737, ../sass/main.scss */
   h4 {
     font-size: 1em; }
 
   /* Section/Article */
-  /* line 1744, ../sass/main.scss */
+  /* line 1745, ../sass/main.scss */
   header p br {
     display: none; }
-  /* line 1749, ../sass/main.scss */
+  /* line 1750, ../sass/main.scss */
   header h2 + p {
     font-size: 1em; }
-  /* line 1753, ../sass/main.scss */
+  /* line 1754, ../sass/main.scss */
   header h3 + p {
     font-size: 1em; }
-  /* line 1757, ../sass/main.scss */
+  /* line 1758, ../sass/main.scss */
   header h4 + p,
   header h5 + p,
   header h6 + p {
     font-size: 0.9em; }
-  /* line 1763, ../sass/main.scss */
+  /* line 1764, ../sass/main.scss */
   header.major {
     margin: 0 0 2em 0; }
 
   /* Goto Next */
-  /* line 1771, ../sass/main.scss */
+  /* line 1772, ../sass/main.scss */
   .goto-next:before {
     height: 0.8em;
     margin: -0.4em 0 0 -0.6em;
     width: 1.2em; }
 
   /* Spotlight */
-  /* line 1780, ../sass/main.scss */
+  /* line 1781, ../sass/main.scss */
   .spotlight {
     box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25); }
-    /* line 1783, ../sass/main.scss */
+    /* line 1784, ../sass/main.scss */
     .spotlight .image.main {
       max-height: 60vh; }
-    /* line 1787, ../sass/main.scss */
+    /* line 1788, ../sass/main.scss */
     .spotlight .content {
       border-top-width: 0.2em !important;
       padding: 3.25em 1.5em 1.25em 1.5em !important; }
 
   /* Wrapper */
-  /* line 1795, ../sass/main.scss */
+  /* line 1796, ../sass/main.scss */
   .wrapper {
     padding: 3.25em 1.5em 1.25em 1.5em; }
 
   /* Header */
-  /* line 1801, ../sass/main.scss */
+  /* line 1802, ../sass/main.scss */
   #header {
     display: none; }
 
   /* Banner */
-  /* line 1807, ../sass/main.scss */
+  /* line 1808, ../sass/main.scss */
   #banner {
     box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
     min-height: calc(100vh - 44px); }
-    /* line 1811, ../sass/main.scss */
+    /* line 1812, ../sass/main.scss */
     #banner:before {
       height: calc(100vh - 44px); }
-    /* line 1815, ../sass/main.scss */
+    /* line 1816, ../sass/main.scss */
     #banner .content {
       padding: 4.0625em 1.5em 4.875em 1.5em; }
-      /* line 1819, ../sass/main.scss */
+      /* line 1820, ../sass/main.scss */
       #banner .content header h2 {
         font-size: 1.5em; }
-      /* line 1824, ../sass/main.scss */
+      /* line 1825, ../sass/main.scss */
       #banner .content .image {
         height: 9em;
         width: 9em; }
 
   /* Off-Canvas Navigation */
-  /* line 1833, ../sass/main.scss */
+  /* line 1834, ../sass/main.scss */
   #page-wrapper {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -3378,7 +3378,7 @@ body.is-touch #banner {
     padding-bottom: 1px;
     padding-top: 44px !important; }
 
-  /* line 1840, ../sass/main.scss */
+  /* line 1841, ../sass/main.scss */
   #titleBar {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -3395,9 +3395,9 @@ body.is-touch #banner {
     top: 0;
     width: 100%;
     z-index: 10001;
-    background: #272833;
+    background: #062335;
     box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125); }
-    /* line 1853, ../sass/main.scss */
+    /* line 1854, ../sass/main.scss */
     #titleBar .title {
       color: #ffffff;
       display: block;
@@ -3405,11 +3405,11 @@ body.is-touch #banner {
       height: 44px;
       line-height: 44px;
       text-align: center; }
-      /* line 1861, ../sass/main.scss */
+      /* line 1862, ../sass/main.scss */
       #titleBar .title a {
         color: inherit;
         border: 0; }
-    /* line 1867, ../sass/main.scss */
+    /* line 1868, ../sass/main.scss */
     #titleBar .toggle {
       text-decoration: none;
       height: 60px;
@@ -3427,7 +3427,7 @@ body.is-touch #banner {
         font-style: normal;
         font-weight: normal;
         text-transform: none !important; }
-      /* line 1877, ../sass/main.scss */
+      /* line 1878, ../sass/main.scss */
       #titleBar .toggle:before {
         background: #165176;
         color: rgba(255, 255, 255, 0.5);
@@ -3442,7 +3442,7 @@ body.is-touch #banner {
         top: 0;
         width: 54px; }
 
-  /* line 1894, ../sass/main.scss */
+  /* line 1895, ../sass/main.scss */
   #navPanel {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -3466,7 +3466,7 @@ body.is-touch #banner {
     z-index: 10002;
     background: #66be6d;
     padding: 0.75em 1.25em; }
-    /* line 1909, ../sass/main.scss */
+    /* line 1910, ../sass/main.scss */
     #navPanel .link {
       border: 0;
       border-top: solid 1px rgba(255, 255, 255, 0.05);
@@ -3475,50 +3475,50 @@ body.is-touch #banner {
       height: 3em;
       line-height: 3em;
       text-decoration: none; }
-      /* line 1918, ../sass/main.scss */
+      /* line 1919, ../sass/main.scss */
       #navPanel .link:hover {
         color: inherit !important; }
-      /* line 1922, ../sass/main.scss */
+      /* line 1923, ../sass/main.scss */
       #navPanel .link:first-child {
         border-top: 0; }
-      /* line 1926, ../sass/main.scss */
+      /* line 1927, ../sass/main.scss */
       #navPanel .link.depth-0 {
         color: #ffffff;
         font-weight: 300; }
-      /* line 1931, ../sass/main.scss */
+      /* line 1932, ../sass/main.scss */
       #navPanel .link .indent-1 {
         display: inline-block;
         width: 1.25em; }
-      /* line 1932, ../sass/main.scss */
+      /* line 1933, ../sass/main.scss */
       #navPanel .link .indent-2 {
         display: inline-block;
         width: 2.5em; }
-      /* line 1933, ../sass/main.scss */
+      /* line 1934, ../sass/main.scss */
       #navPanel .link .indent-3 {
         display: inline-block;
         width: 3.75em; }
-      /* line 1934, ../sass/main.scss */
+      /* line 1935, ../sass/main.scss */
       #navPanel .link .indent-4 {
         display: inline-block;
         width: 5em; }
-      /* line 1935, ../sass/main.scss */
+      /* line 1936, ../sass/main.scss */
       #navPanel .link .indent-5 {
         display: inline-block;
         width: 6.25em; }
 
-  /* line 1941, ../sass/main.scss */
+  /* line 1942, ../sass/main.scss */
   body.navPanel-visible #page-wrapper {
     -moz-transform: translateX(275px);
     -webkit-transform: translateX(275px);
     -ms-transform: translateX(275px);
     transform: translateX(275px); }
-  /* line 1945, ../sass/main.scss */
+  /* line 1946, ../sass/main.scss */
   body.navPanel-visible #titleBar {
     -moz-transform: translateX(275px);
     -webkit-transform: translateX(275px);
     -ms-transform: translateX(275px);
     transform: translateX(275px); }
-  /* line 1949, ../sass/main.scss */
+  /* line 1950, ../sass/main.scss */
   body.navPanel-visible #navPanel {
     -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
@@ -3526,46 +3526,46 @@ body.is-touch #banner {
     transform: translateX(0); }
 
   /* Footer */
-  /* line 1957, ../sass/main.scss */
+  /* line 1958, ../sass/main.scss */
   #footer {
     padding: 3.25em 1.5em; } }
 /* XSmall */
 @media screen and (max-width: 480px) {
   /* Basic */
-  /* line 1972, ../sass/main.scss */
+  /* line 1973, ../sass/main.scss */
   html, body {
     min-width: 320px; }
 
-  /* line 1976, ../sass/main.scss */
+  /* line 1977, ../sass/main.scss */
   body, input, select, textarea {
     font-size: 12pt; }
 
   /* List */
-  /* line 1983, ../sass/main.scss */
+  /* line 1984, ../sass/main.scss */
   ul.actions {
     margin: 0 0 2em 0; }
-    /* line 1986, ../sass/main.scss */
+    /* line 1987, ../sass/main.scss */
     ul.actions li {
       display: block;
       padding: 1em 0 0 0;
       text-align: center;
       width: 100%; }
-      /* line 1992, ../sass/main.scss */
+      /* line 1993, ../sass/main.scss */
       ul.actions li:first-child {
         padding-top: 0; }
-      /* line 1996, ../sass/main.scss */
+      /* line 1997, ../sass/main.scss */
       ul.actions li > * {
         margin: 0 !important;
         width: 100%; }
-    /* line 2003, ../sass/main.scss */
+    /* line 2004, ../sass/main.scss */
     ul.actions.small li {
       padding: 0.5em 0 0 0; }
-      /* line 2006, ../sass/main.scss */
+      /* line 2007, ../sass/main.scss */
       ul.actions.small li:first-child {
         padding-top: 0; }
 
   /* Button */
-  /* line 2016, ../sass/main.scss */
+  /* line 2017, ../sass/main.scss */
   input[type="submit"],
   input[type="reset"],
   input[type="button"],
@@ -3573,37 +3573,37 @@ body.is-touch #banner {
     padding: 0; }
 
   /* Spotlight */
-  /* line 2026, ../sass/main.scss */
+  /* line 2027, ../sass/main.scss */
   .spotlight .image.main {
     max-height: 50vh; }
-  /* line 2030, ../sass/main.scss */
+  /* line 2031, ../sass/main.scss */
   .spotlight .content {
     padding: 3em 1.25em 1em 1.25em !important; }
 
   /* Wrapper */
-  /* line 2037, ../sass/main.scss */
+  /* line 2038, ../sass/main.scss */
   .wrapper {
     padding: 3em 1.25em 1em 1.25em; }
 
   /* Banner */
-  /* line 2044, ../sass/main.scss */
+  /* line 2045, ../sass/main.scss */
   #banner .content {
     padding: 3em 1.5625em 5.25em 1.5625em; }
 
   /* Footer */
-  /* line 2051, ../sass/main.scss */
+  /* line 2052, ../sass/main.scss */
   #footer {
     padding: 3em 1.25em; }
-    /* line 2054, ../sass/main.scss */
+    /* line 2055, ../sass/main.scss */
     #footer .copyright {
       line-height: inherit; }
-      /* line 2057, ../sass/main.scss */
+      /* line 2058, ../sass/main.scss */
       #footer .copyright li {
         border-left: 0;
         display: block;
         margin: 0;
         padding: 0; } }
-/* line 2067, ../sass/main.scss */
+/* line 2068, ../sass/main.scss */
 .message {
   display: inline-block;
   position: fixed;
@@ -3626,7 +3626,7 @@ body.is-touch #banner {
   text-align: center;
   word-wrap: break-word; }
 
-/* line 2087, ../sass/main.scss */
+/* line 2088, ../sass/main.scss */
 .loading {
   display: block;
   position: relative;

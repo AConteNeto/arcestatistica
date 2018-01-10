@@ -113,7 +113,7 @@ input[type="button"],
   height: 100%; }
   /* line 144, ../sass/ie8.scss */
   .spotlight .content {
-    background: #272833; }
+    background: #062335; }
 
 /* Wrapper */
 /* line 158, ../sass/ie8.scss */
@@ -136,7 +136,7 @@ input[type="button"],
 /* Dropotron */
 /* line 178, ../sass/ie8.scss */
 .dropotron {
-  background: #272833;
+  background: #062335;
   box-shadow: none !important;
   -ms-behavior: url("assets/js/ie/PIE.htc"); }
   /* line 184, ../sass/ie8.scss */
@@ -152,7 +152,7 @@ input[type="button"],
 /* Header */
 /* line 200, ../sass/ie8.scss */
 #header {
-  background: #272833; }
+  background: #062335; }
 
 /* Banner */
 /* line 206, ../sass/ie8.scss */
