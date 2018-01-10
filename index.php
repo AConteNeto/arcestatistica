@@ -98,6 +98,7 @@
 			<span class="image fit main"><img src="images/background.jpg" alt="" /></span>
 			<header>
 				<h2>Enriqueça seus projetos acadêmicos</h2>
+				<p>&nbsp</p>
 			</header>
 			<div class="content">
 				<p> 
