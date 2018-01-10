@@ -213,8 +213,14 @@
 	<script src="assets/js/drawCanvas.js"></script>
 	<script>
 		$("canvas").drawRandomPoints({
-			barPixels: 5,
+			fps: 25,
+			barPixels: 8,
 			noMouseVelocity: 0.002,
+			closeVelocity: 0.05,
+			farVelocity: 0.01,
+			percentHeight: 0.15,
+			widthEfectFast: 0.1,
+			pointSize: 6
 		});
 	</script>
 </body>
